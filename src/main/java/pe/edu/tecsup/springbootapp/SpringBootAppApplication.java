@@ -8,6 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import pe.edu.tecsup.springbootapp.beans.Calculadora;
+import pe.edu.tecsup.springbootapp.beans.Saludo;
 import pe.edu.tecsup.springbootapp.beans.SaludoImpl;
 
 @SpringBootApplication
@@ -29,7 +30,7 @@ public class SpringBootAppApplication implements CommandLineRunner  {
 	private Calculadora calculadora;
 
 	@Autowired
-	private SaludoImpl saludoImpl;
+	private Saludo saludo;
 	
 	@Override
 	public void run(String... args) throws Exception {
@@ -39,7 +40,7 @@ public class SpringBootAppApplication implements CommandLineRunner  {
 		
 		log.info("Resultado: " + resultado);
 
-		log.info(saludoImpl.noche("Jaime"));
+		log.info(saludo.noche("Jaime"));
 		
 	}
 
