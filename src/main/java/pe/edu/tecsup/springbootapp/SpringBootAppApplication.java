@@ -9,24 +9,24 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import pe.edu.tecsup.springbootapp.beans.Calculadora;
 
 @SpringBootApplication
-public class SpringBootApp2Application implements CommandLineRunner  {
+public class SpringBootAppApplication implements CommandLineRunner  {
 
 	public static void main(String[] args) {
 		
-		SpringApplication.run(SpringBootApp2Application.class, args);
+		SpringApplication.run(SpringBootAppApplication.class, args);
 	
-	}
+	} 
 
 	private static Logger log 
-		= LoggerFactory.getLogger(SpringBootApp2Application.class);
+		= LoggerFactory.getLogger(SpringBootAppApplication.class);
 	
 	@Override
 	public void run(String... args) throws Exception {
 		log.info("Hola Mundo con Spring Boot!");
 
 		Calculadora calculadora = new Calculadora();
-		
 		Double resultado = calculadora.sumar(15.0, 5.0);
+		
 		log.info("Resultado: " + resultado);
 
 		
