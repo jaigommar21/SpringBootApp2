@@ -1,5 +1,8 @@
 package pe.edu.tecsup.springbootapp.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SaludoImpl implements Saludo {
 
 	@Override
