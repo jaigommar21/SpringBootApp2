@@ -2,6 +2,7 @@ package pe.edu.tecsup.springbootapp;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,7 +22,10 @@ public class SpringBootAppApplication implements CommandLineRunner  {
 		= LoggerFactory.getLogger(SpringBootAppApplication.class);
 
 	
-	private Calculadora calculadora = new Calculadora();
+	//private Calculadora calculadora = new Calculadora();
+	
+	@Autowired
+	private Calculadora calculadora;
 
 	
 	@Override
