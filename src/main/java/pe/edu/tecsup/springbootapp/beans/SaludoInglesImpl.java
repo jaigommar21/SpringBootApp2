@@ -3,21 +3,21 @@ package pe.edu.tecsup.springbootapp.beans;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SaludoImpl implements Saludo {
+public class SaludoInglesImpl implements Saludo {
 
 	@Override
 	public String dia(String nombres) {
-		return "Buenos días " + nombres;
+		return "Good morning " + nombres;
 	}
 
 	@Override
 	public String tarde(String nombres) {
-		return "Buenas tardes " + nombres;
+		return "Good afternoon " + nombres;
 	}
 
 	@Override
 	public String noche(String nombres) {
-		return "Buenas noches " + nombres;
+		return "Good night " + nombres;
 	}
 
 }
