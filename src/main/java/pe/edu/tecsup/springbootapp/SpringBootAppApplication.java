@@ -19,12 +19,15 @@ public class SpringBootAppApplication implements CommandLineRunner  {
 
 	private static Logger log 
 		= LoggerFactory.getLogger(SpringBootAppApplication.class);
+
+	
+	private Calculadora calculadora = new Calculadora();
+
 	
 	@Override
 	public void run(String... args) throws Exception {
 		log.info("Hola Mundo con Spring Boot!");
 
-		Calculadora calculadora = new Calculadora();
 		Double resultado = calculadora.sumar(15.0, 5.0);
 		
 		log.info("Resultado: " + resultado);
